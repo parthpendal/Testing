@@ -15,7 +15,7 @@ url="https://www.bing.com/search?q="
 #	url1=url+str(randrange(1,1000))
 #	webbrowser.get('chrome').open_new_tab(url1)
 #	time.sleep(1)
-
+#additional comments
 webbrowser.register('edge',None,webbrowser.BackgroundBrowser("C://Program Files (x86)//Microsoft//Edge//Application//msedge.exe"))
 for i in range(40,0,-1):
 	url1=url+str(randrange(1,1000))
