@@ -1,0 +1,30 @@
+import webbrowser
+import time
+import os
+
+from random import randrange
+url="https://www.bing.com/search?q="
+webbrowser.register('chrome',None,webbrowser.BachgroundBrowser("C://Program Files//Google//Chrome//Application//chrome.exe"))
+for i in range(20,0,-1):
+	url1=url+str(randrange(1,1000))
+	webbrowser.get('chrome').open_tab(url1)
+	time.sleep(1)
+
+webbrowser.register('edge',None,webbrowser.BachgroundBrowser("C://Program Files (x86)//Microsoft//Edge//Application//msedge.exe"))
+for i in range(20,0,-1):
+	url1=url+str(randrange(1,1000))
+	webbrowser.get('edge').open_tab(url1)
+	time.sleep(1)
+
+webbrowser.register('firefox',None,webbrowser.BachgroundBrowser(""C://Program Files//Mozilla Firefox//firefox.exe""))
+for i in range(20,0,-1):
+	url1=url+str(randrange(1,1000))
+	webbrowser.get('firefox').open_tab(url1)
+	time.sleep(1)
+
+os.system("taskkill /im chrome.exe /f")
+time.sleep(10)
+os.system("taskkill /im msedge.exe /f")
+time.sleep(10)
+os.system("taskkill /im firefox.exe /f")
+time.sleep(10)
