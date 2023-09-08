@@ -8,7 +8,7 @@ import os
 from random import randrange
 
 
-
+print("test")
 url="https://www.bing.com/search?q="
 #webbrowser.register('chrome',None,webbrowser.BackgroundBrowser("C://Program Files//Google//Chrome//Application//chrome.exe"))
 #for i in range(40,0,-1):
